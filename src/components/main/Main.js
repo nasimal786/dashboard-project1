@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import ProjectInformation from "./ProjectInformation";
 import Devices from "./Devices";
@@ -9,7 +8,7 @@ import Specifications from "./Specifications";
 import Buttons from "./Buttons";
 
 const Main = () => {
-  const [selectedCountry, setSelectedCountry] = useState('');
+  const [selectedCountry, setSelectedCountry] = useState("");
   const [formData, setFormData] = useState({
     projectInformation: {},
     devices: {},
@@ -44,18 +43,18 @@ const Main = () => {
       devices: formData.devices,
       filter: formData.filter,
     };
-
+    console.log(combinedFormData)
   };
 
   return (
     <div className="grid-container">
       <Sidebar />
       <main>
-      <button>
-      <i class="fa-solid fa-arrow-left"></i>
-        Back</button>
+        <button>
+          <i class="fa-solid fa-arrow-left"></i>
+          Back
+        </button>
         <div className="main">
-          
           <ProjectInformation onFormSubmit={handleProjectInfoSubmit} />
           <div className="right-section">
             <Devices onFormSubmit={handleDevicesSubmit} />
@@ -63,7 +62,7 @@ const Main = () => {
           </div>
         </div>
         <Regions handleCountryChange={handleCountryChange} />
-        <Specifications selectedCountry={selectedCountry}/>
+        <Specifications selectedCountry={selectedCountry} />
         <Buttons onSubmit={handleSubmit} />
       </main>
     </div>

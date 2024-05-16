@@ -41,7 +41,6 @@ const Specifications = ({ selectedCountry }) => {
     setRows(updatedRows);
   };
 
-  // Mapping of languages based on selected country
   const languageMap = {
     India: "Hindi",
     China: "Chinese",
@@ -82,8 +81,15 @@ const Specifications = ({ selectedCountry }) => {
                       handleInputChange(row.id, "targetGroup", e.target.value)
                     }
                   />
-                  <span className="add" onClick={() => handleAddRow()}>+</span>
-                  <span className="remove" onClick={() => handleRemoveRow(row.id)}>x</span>
+                  <span className="add" onClick={() => handleAddRow()}>
+                    +
+                  </span>
+                  <span
+                    className="remove"
+                    onClick={() => handleRemoveRow(row.id)}
+                  >
+                    x
+                  </span>
                 </td>
                 <td>
                   <input

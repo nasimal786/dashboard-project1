@@ -11,8 +11,8 @@ const ProjectInformation = () => {
             <input type="text" placeholder="project name" />
           </div>
           <div className="form-group">
-            <label>Project Type</label>
-            <input type="text" placeholder="project name" />
+            <label>Work Order No.#</label>
+            <input type="text" placeholder="Work Order Number" />
           </div>
         </div>
         <div className="project_row2">
@@ -23,13 +23,13 @@ const ProjectInformation = () => {
             </select>
           </div>
           <div className="form-group">
-            <label>Project Type</label>
+            <label>Category</label>
             <select>
               <option>Please Select</option>
             </select>
           </div>
           <div className="form-group">
-            <label>Project Type</label>
+            <label>Client</label>
             <select>
               <option>Please Select</option>
             </select>
@@ -37,19 +37,19 @@ const ProjectInformation = () => {
         </div>
         <div className="project_row2">
           <div className="form-group">
-            <label>Project Type</label>
+            <label>Client's Contact</label>
             <select>
               <option>Please Select</option>
             </select>
           </div>
           <div className="form-group">
-            <label>Project Type</label>
+            <label>Sales Person</label>
             <select>
               <option>Please Select</option>
             </select>
           </div>
           <div className="form-group">
-            <label>Project Type</label>
+            <label>Project Manager</label>
             <select>
               <option>Please Select</option>
             </select>

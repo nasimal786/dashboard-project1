@@ -25,23 +25,28 @@ body {
 }
 
 .sidebar-list-item {
-  
-  padding: 15px;
-  font-size: 18px;
+  position: relative;
+  padding: 10px ;
+  font-size: 15px;
+}
+
+.sidebar-list-item i.arrow {
+  position: absolute; 
+  right: 15px; 
+  top: 50%; 
+  transform: translateY(-50%);
 }
 .sidebar-list-item i{
   margin-right: 10px;
 }
 
 .sidebar-list-item1{
-  padding: 12px;
-  margin-left: 30px;
+  padding: 12px 46px;
   background-color: #f0f2f6;
   color: rgba(31, 31, 200, 0.919);
 }
 .sidebar-list-item2{
-  padding: 12px;
-  margin-left: 30px;
+  padding: 12px 46px;
   background-color: #f0f2f6;
   color: #333;
 }
@@ -70,7 +75,7 @@ main button i{
   height: fit-content;
   margin: 10px;
   border: 1px solid rgba(128, 128, 128, 0.312);
-  background-color: #dbdfe6cc;
+  background-color: #dbdfe6c8;
 }
 .project_info p {
   background-color: white;
@@ -116,7 +121,7 @@ main button i{
 .devices, .filter {
   border: 1px solid rgba(128, 128, 128, 0.338);
   margin-bottom: 20px;
-  background-color: #dbdfe6cc;
+  background-color:#dbdfe6c8;
 }
 
 .devices p{
@@ -147,7 +152,7 @@ main button i{
   width: 98%;
   border: 1px solid rgba(128, 128, 128, 0.374);
   margin-left: 10px;
-  background-color: #dbdfe6cc;
+  background-color: #dbdfe6c8;
 }
 .regions_p{
   background-color: white;
@@ -180,7 +185,7 @@ main button i{
   width: 98%;
   border: 1px solid rgba(128, 128, 128, 0.352);
   margin-left: 10px;
-  background-color: #dbdfe6cc;
+  background-color: #dbdfe6c8;
   margin-top: 10px;
 }
 .specifications p{
@@ -190,18 +195,28 @@ main button i{
   font-size: 1rem; 
 }
 .specifications_table{
-  padding:0 10px;
+  padding: 2px 3px;
   margin-bottom: 8px;
 }
 .specifications_table input{
-  padding: 5px;
-  border: 1px solid #ccc;
+  padding: 3px;
+  border: 1px solid #bcaeae;
   border-radius: 4px;
   font-size: 1rem;
   
 }
-table{
+/* table{
   width: 100%;
+
+} */
+tr:nth-child(even) {
+  background-color: white;
+}
+tr:nth-child(odd) {
+  background-color:  #9ca5b467;
+}
+td{
+  padding: 5px;
 }
 th{
   background-color: #204893;
@@ -211,7 +226,7 @@ th{
   font-size: .8rem;
 }
 .spe_inp{
-  width: 145px;
+  width: 140px;
 }
 .add_rmv_btn{
   display: flex;

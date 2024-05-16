@@ -43,7 +43,7 @@ const Main = () => {
       devices: formData.devices,
       filter: formData.filter,
     };
-    console.log(combinedFormData)
+    console.log(combinedFormData);
   };
 
   return (

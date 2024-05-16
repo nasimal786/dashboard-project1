@@ -7,7 +7,7 @@ const ProjectInformation = () => {
       <form>
         <div className="project_row1">
           <div className="form-group">
-            <label>Project Name</label>
+            <label>Project Name <span>*</span></label>
             <input type="text" placeholder="project name" />
           </div>
           <div className="form-group">
@@ -17,7 +17,7 @@ const ProjectInformation = () => {
         </div>
         <div className="project_row2">
           <div className="form-group">
-            <label>Project Type</label>
+            <label>Project Type <span>*</span></label>
             <select>
               <option>Please Select</option>
             </select>
